@@ -1,9 +1,9 @@
 import { worker } from 'businessman'
-import { post } from '../storeTypes'
-import { REQUEST_POSTS } from '../actionTypes'
-import { postsByName } from '../getterTypes'
-import { addPosts } from '../mutationTypes'
-import { fetchPostsIfNeeded } from '../managerTypes'
+import { post } from '../types/storeTypes'
+import { REQUEST_POSTS } from '../types/actionTypes'
+import { postsByName } from '../types/getterTypes'
+import { addPosts } from '../types/mutationTypes'
+import { fetchPostsIfNeeded } from '../types/managerTypes'
 
 const fat = data => {
 	let res = []

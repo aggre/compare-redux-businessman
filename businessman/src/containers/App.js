@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { subscribe, getState, operate } from 'businessman'
-import { post } from '../storeTypes'
-import { postsByName } from '../getterTypes'
-import { fetchPostsIfNeeded } from '../managerTypes'
+import { post } from '../types/storeTypes'
+import { postsByName } from '../types/getterTypes'
+import { fetchPostsIfNeeded } from '../types/managerTypes'
 import Posts from '../components/Posts'
 
 let queue = [
