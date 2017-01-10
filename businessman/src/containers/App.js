@@ -27,7 +27,6 @@ class App extends Component {
 		subscribe( post, ( state ) => {
 			getState( post, postsByName, queue[ 0 ] )
 			.then( state => {
-				console.log(getState);
 				queue.shift()
 				this.setState( { posts: state } )
 			} )
@@ -50,7 +49,7 @@ class App extends Component {
 		return (
 			<div>
 				<div>
-					{posts ? <Posts posts={posts}/> : ''}
+					<Posts posts={posts}/>
 				</div>
 			</div>
 		)
