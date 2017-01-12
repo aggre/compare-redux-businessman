@@ -14,7 +14,7 @@
     "react-dom": "^15.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run build:worker && react-scripts start",
     "build": "react-scripts build && npm run build:worker",
     "build:worker": "rollup -c config/rollup.config.js",
     "eject": "react-scripts eject"
