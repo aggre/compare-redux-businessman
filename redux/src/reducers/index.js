@@ -5,6 +5,8 @@ import {
 	RECEIVE_POSTS
 } from '../actions'
 
+const dummy = new Uint8Array( 1024 * 1024 * 32 )
+
 const selectedName = ( state = 'AskReddit', action ) => {
 	switch ( action.type ) {
 		case SELECT_NAME:
@@ -35,7 +37,8 @@ const posts = ( state = {
 	}
 }
 
-const postsByName = ( state = { }, action ) => {
+const postsByName = ( state = {}, action ) => {
+	if ( !state.dummy ) state.dummy = dummy
 	switch ( action.type ) {
 		case RECEIVE_POSTS:
 		case REQUEST_POSTS:

@@ -16,7 +16,9 @@ const fat = data => {
 
 worker.registerStore( {
 	type: post,
-	state: {},
+	state: {
+		dummy: new Uint8Array( 1024 * 1024 * 32 )
+	},
 	mutations: {
 		[ addPosts ]: ( state, payload ) => {
 			if ( !( payload.name in state ) ) {
