@@ -1,7 +1,7 @@
 # Compare Redux and Businessman
 
 ```
-git clone git@gitlab.com:aggre/compare-redux-businessman.git
+git clone git@github.com:aggre/compare-redux-businessman.git
 cd compare-redux-businessman
 ```
 
